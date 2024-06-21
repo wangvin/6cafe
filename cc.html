@@ -1,0 +1,212 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CANTEEN</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob: filesystem:">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.2/normalize.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+</head>
+    <body>
+<form action="https://docs.google.com/forms/d/1liLewlOlq5bzEgGKAGOzfwf6C0L_AMVRcWGn5UAmwcM/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+<div id="home" data-role="page">
+  <div data-role="header" data-position="fixed">
+    <h3>CANTEEN結帳</h3>
+  </div>
+ <div role="main" class="ui-content">
+  <div data-role="collapsibleset">
+
+   
+   <div data-role="collapsible" data-collapsed="false">
+    <h3>日結</h3> 
+    <div class="ui-field-contain"> <label for="entry_208912365">結帳日期</label>
+      <input type="date" name="entry.208912365" id="entry_208912365">
+    </div>
+    
+    <div class="ui-field-contain"> <label for="entry_1521686500">營收</label>
+     <input type="number" pattern="[0-9]*" name="entry.1521686500" id="entry_1521686500" onkeyup="myFunction()">
+    </div>
+   </div>
+    
+   
+   
+   <div data-role="collapsible" data-collapsed="true">  
+    <h3>錢櫃現金</h3>
+    <div class="ui-field-contain"> <label for="c1000">1000</label> 
+     <input type="number" pattern="[0-9]*" name="c.1000" id="c1000" onkeyup="myFunction()">
+    </div>
+    <div class="ui-field-contain"> <label for="c500">500</label>
+     <input type="number" pattern="[0-9]*" name="c.500" id="c500" onkeyup="myFunction()">
+    </div>
+    <div class="ui-field-contain"> <label for="c200">200</label>
+     <input type="number" pattern="[0-9]*" name="c.200" id="c200" onkeyup="myFunction()">
+    </div>
+    <div class="ui-field-contain"> <label for="c100">100</label>
+     <input type="number" pattern="[0-9]*" name="c.100" id="c100" onkeyup="myFunction()">
+    </div>
+    <div class="ui-field-contain"> <label for="c50">50</label>
+     <input type="number" pattern="[0-9]*" name="c.50" id="c50" onkeyup="myFunction()">
+    </div>
+    <div class="ui-field-contain"> <label for="c10">10</label>
+     <input type="number" pattern="[0-9]*" name="c.10" id="c10" onkeyup="myFunction()">
+    </div>
+    <div class="ui-field-contain"> <label for="c5">5</label>
+     <input type="number" pattern="[0-9]*" name="c.5" id="c5" onkeyup="myFunction()">
+    </div>
+    <div class="ui-field-contain"> <label for="c1">1</label>
+     <input type="number" pattern="[0-9]*" name="c.1" id="c1" onkeyup="myFunction()">
+    </div>
+   </div>
+
+
+
+   <div data-role="collapsible" data-collapsed="true">
+    <h3>支出</h3>
+    
+    <div class="ui-field-contain"> <label for="entry_2018060295">菜</label>
+     <input type="number" pattern="[0-9]*" name="entry.2018060295" id="entry_2018060295" onkeyup="myFunction()"> 
+    </div>
+
+    <div class="ui-field-contain"> <label for="entry_330208263">水果</label>
+     <input type="number" pattern="[0-9]*" name="entry.330208263" id="entry_330208263" onkeyup="myFunction()">
+    </div>
+
+    <div class="ui-field-contain"> <label for="entry_174979921">街口</label>
+     <input type="number" pattern="[0-9]*" name="entry.174979921" id="entry_174979921" onkeyup="myFunction()">
+    </div>
+
+    <div class="ui-field-contain"> <label for="entry_412581617" class="ui-hidden-accessible"></label><!--支出4-->
+     <input name="entry.858872193" id="entry_858872193" placeholder="支出" type="text">
+     <input type="number" pattern="[0-9]*" name="entry.412581617" id="entry_412581617" onkeyup="myFunction()"> 
+    </div>
+
+    <div class="ui-field-contain"> <label for="entry_43124397" class="ui-hidden-accessible"></label><!--支出5-->
+     <input name="entry.970293628" id="entry_970293628" placeholder="支出" type="text">
+     <input type="number" pattern="[0-9]*" name="entry.43124397" id="entry_43124397" onkeyup="myFunction()">
+    </div>
+
+    <div class="ui-field-contain"> <label for="entry_1457324047" class="ui-hidden-accessible"></label><!--支出6-->
+     <input name="entry.896828422" id="entry_896828422" placeholder="支出" type="text">
+     <input type="number" pattern="[0-9]*" name="entry.1457324047" id="entry_1457324047" onkeyup="myFunction()"> 
+    </div>
+
+    <div class="ui-field-contain"> <label for="entry_937174574" class="ui-hidden-accessible"></label><!--支出7-->
+     <input name="entry.1694499167" id="entry_1694499167" placeholder="支出" type="text">
+     <input type="number" pattern="[0-9]*" name="entry.937174574" id="entry_937174574" onkeyup="myFunction()">
+    </div>
+    
+    <div class="ui-field-contain"> <label for="entry_437029278" class="ui-hidden-accessible"></label><!--支出8-->
+     <input name="entry.481042389" id="entry_481042389" placeholder="支出" type="text">
+     <input type="number" pattern="[0-9]*" name="entry.437029278" id="entry_437029278" onkeyup="myFunction()">
+    </div>
+   </div>
+    
+
+   <div data-role="collapsible" data-collapsed="true">
+    <h3>收入</h3>
+
+    <div class="ui-field-contain"> <label for="entry_653267937" class="ui-hidden-accessible"></label>
+     <input name="entry.862735822" id="entry_862735822" placeholder="非營收" type="text">
+     <input type="number" pattern="[0-9]*" name="entry.653267937" id="entry_653267937" onkeyup="myFunction()">
+    </div>
+
+    <div class="ui-field-contain"> <label for="entry_1189489393" class="ui-hidden-accessible"></label> 
+     <input name="entry.16061707" id="entry_16061707" placeholder="非營收" type="text">
+     <input type="number" pattern="[0-9]*" name="entry.1189489393" id="entry_1189489393" onkeyup="myFunction()">
+    </div>
+
+    <div class="ui-field-contain"> <label for="entry_1574972445">小費</label>
+     <input type="number" name="entry.1574972445" id="entry_1574972445" onkeyup="myFunction()">
+    </div>
+    
+    <div class="ui-field-contain"> <label for="entry_1223344127">應收現金</label>
+     <input type="number" name="entry.1223344127" id="entry_1223344127" onkeyup="myFunction()">
+    </div>
+    
+    <div class="ui-field-contain"> <label for="entry_418191014">實收現金</label>
+     <input type="number" name="entry.418191014" id="entry_418191014" onkeyup="myFunction()">
+    </div>
+
+    <div class="ui-field-contain"> <label for="174525158">短溢</label>
+     <input type="number" name="entry.174525158" id="entry_174525158" onkeyup="myFunction()">
+    </div>
+    
+    <div class="ui-field-contain"> <label for="entry_1586233609">備註</label>
+     <textarea name="entry.1586233609" id="entry_1586233609"></textarea>
+    </div>
+    
+    <input type="hidden" name="draftResponse" value="[,,&quot;-5315865841251593916&quot;]">
+    <input type="hidden" name="pageHistory" value="0">
+    <input type="hidden" name="fbzx" value="-5315865841251593916">
+    
+    <input type="submit" name="submit" value="Submit" id="ss-submit" class="ui-btn">
+
+   </div>
+
+  </div>
+ </div>
+</div>
+</form>
+
+<script>
+function myFunction() 
+{
+  var c1000 = parseInt(document.getElementById("c1000").value);
+  var c500 = parseInt(document.getElementById("c500").value);
+  var c200 = parseInt(document.getElementById("c200").value);
+  var c100 = parseInt(document.getElementById("c100").value);
+  var c50 = parseInt(document.getElementById("c50").value);
+  var c10 = parseInt(document.getElementById("c10").value);
+  var c5 = parseInt(document.getElementById("c5").value);
+  var c1 = parseInt(document.getElementById("c1").value);
+  if(isNaN(c1000)) {c1000=0};
+  if(isNaN(c500)) {c500=0};
+  if(isNaN(c200)) {c200=0};
+  if(isNaN(c100)) {c100=0};
+  if(isNaN(c50)) {c50=0};
+  if(isNaN(c10)) {c10=0};
+  if(isNaN(c5)) {c5=0};
+  if(isNaN(c1)) {c1=0};
+  var c = (c1000*1000)+(c500*500)+(c200*200)+(c100*100)+(c50*50)+(c10*10)+(c5*5)+c1;
+  var rc = c-5000
+  document.getElementById("entry_418191014").value = rc;
+  var f1 = parseInt(document.getElementById("entry_2018060295").value);
+  var f2 = parseInt(document.getElementById("entry_330208263").value);
+  var f3 = parseInt(document.getElementById("entry_174979921").value);
+  var f4 = parseInt(document.getElementById("entry_412581617").value);
+  var f5 = parseInt(document.getElementById("entry_43124397").value);
+  var f6 = parseInt(document.getElementById("entry_1457324047").value);
+  var f7 = parseInt(document.getElementById("entry_937174574").value);
+  var f8 = parseInt(document.getElementById("entry_437029278").value);
+  
+  if(isNaN(f1)) {f1=0};
+  if(isNaN(f2)) {f2=0};
+  if(isNaN(f3)) {f3=0};
+  if(isNaN(f4)) {f4=0};
+  if(isNaN(f5)) {f5=0};
+  if(isNaN(f6)) {f6=0};
+  if(isNaN(f7)) {f7=0};
+  if(isNaN(f8)) {f8=0};
+  
+  var ft = f1+f2+f3+f4+f5+f6+f7+f8;//總支出
+    
+  var i1 = parseInt(document.getElementById("entry_1521686500").value);//營收
+  var i2 = parseInt(document.getElementById("entry_653267937").value);//非營收1金額
+  var i3 = parseInt(document.getElementById("entry_1189489393").value);//非營收2金額
+  var i4 = parseInt(document.getElementById("entry_1574972445").value);//小費
+  if(isNaN(i1)) {i1=0};
+  if(isNaN(i2)) {i2=0};
+  if(isNaN(i3)) {i3=0};
+  if(isNaN(i4)) {i4=0};
+ 
+  var sc = i1-ft+i2+i3+i4;//應收現金
+  document.getElementById("entry_1223344127").value = sc;////應收現金
+  document.getElementById("entry_174525158").value = rc-sc;//短溢
+}
+</script>
+
+</body>
+</html>
