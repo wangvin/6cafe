@@ -298,7 +298,7 @@
           </div>
 
                 
-          <div class="ui-field-contain"> <label for=othin">其他收入</label>
+          <div class="ui-field-contain"> <label for="othin">其他收入</label>
       
             <input type="number" pattern="[0-9]*" name="entry.1581103356" id="othin" onkeyup="myFunction()">
        
@@ -502,10 +502,7 @@
       
         var i6 = parseInt(document.getElementById("tip").value);//小費
 
-        var i7 = parseInt(document.getElementById("pandad").value);//panda折扣
-
-
-      
+            
         
       
         if(isNaN(i1)) {i1=0};
@@ -520,13 +517,11 @@
       
         if(isNaN(i6)) {i6=0};
 
-        if(isNaN(i7)) {i7=0};
+             
       
         
       
-        
-      
-        var ri =i1+i2+i3+i7;//實際營收
+        var ri =i1+i2+i3+p2;//實際營收
       
         document.getElementById("realin").value = ri;//實際營收
       
