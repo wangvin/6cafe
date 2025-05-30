@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+</head>
+	 <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            background-image: url("6bg.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+		 /* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 100px;
+  padding: 0 60px;
+  color: #555;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #A5BBA4;
+  border-color: #A5BBA4; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #BBD1BA;
+  border-color: #BBD1BA; }
+
+    </style>
+
+	<DIV style="width:800px;height:100px;margin:0 auto;"></DIV>
+	<DIV style="width:800px;height:200px;margin:0 auto;"><center><img src="clogo.png" alt="centered image" height=100px></center></DIV>
+	<DIV style="width:300px;height:200px;margin:0 auto;"><center><a class="button button-primary" href="https://store.dudooeat.com/order/store/d315127e9e944987b25ee3edb6f7b213">線上點餐</a></center></DIV>
+	<DIV style="width:300px;height:200px;margin:0 auto;"><center><a class="button button-primary" href="https://inline.app/booking/-O1VlBplH8aRh65Ly82x:inline-live-3/-O1VlC27aUh0pYDFzjxs">線上訂位</a></center></DIV>
+  <DIV style="width:300px;height:200px;margin:0 auto;"><center><a href="https://lin.ee/h8l29D3"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" height=80px; alt="加入好友"></a></center></DIV> 
+
+<body>
+</body>
+</html>
