@@ -44,7 +44,7 @@
       
          <div data-role="collapsible" data-collapsed="false">
       
-          <h3>POS</h3> 
+          <h3>肚肚</h3> 
       
           <div class="ui-field-contain"> <label for="date">結帳日期</label>
       
@@ -54,7 +54,7 @@
       
           
       
-          <div class="ui-field-contain"> <label for="doin">營業額</label>
+          <div class="ui-field-contain"> <label for="doin">肚肚營業額</label>
       
            <input type="number" pattern="[0-9]*" name="entry.633334301" id="doin" onkeyup="myFunction()">
       
@@ -69,34 +69,51 @@
           </div>
       
            
-           <div class="ui-field-contain"> <label for="uber">uber</label>
+                 
+      
+          <div class="ui-field-contain"> <label for="px">全支付</label>
+      
+           <input type="number" pattern="[0-9]*" name="entry.956761862" id="px" onkeyup="myFunction()">
+      
+          </div>
+
+          <div class="ui-field-contain"> <label for="tw">台灣pay</label>
+      
+            <input type="number" pattern="[0-9]*" name="entry.363340879" id="tw" onkeyup="myFunction()">
+       
+           </div>
+
+          <div class="ui-field-contain"> <label for="uber">uber</label>
       
             <input type="number" pattern="[0-9]*" name="entry.254267311" id="uber" onkeyup="myFunction()">
        
-          </div>  
+          </div>
 
+          <div class="ui-field-contain"> <label for="dpanda">肚肚panda</label>
+      
+            <input type="number" pattern="[0-9]*"  id="dpanda" onkeyup="myFunction()">
+       
+           </div>
 
-          <div class="ui-field-contain"> <label for="panda">panda</label>
+           <div class="ui-field-contain"> <label for="pandad">panda折扣</label>
+      
+            <input type="number" pattern="[0-9]*" id="pandad" onkeyup="myFunction()">
+       
+           </div>
+
+           <div class="ui-field-contain"> <label for="panda">panda</label>
       
             <input type="number" pattern="[0-9]*" name="entry.1430238907" id="panda" onkeyup="myFunction()">
        
            </div>
-      
-       
 
-         <div class="ui-field-contain"> <label for="jko">台新</label>
+          <div class="ui-field-contain"> <label for="jko">街口(紅色那台)</label>
       
            <input type="number" pattern="[0-9]*" name="entry.499226577" id="jko" onkeyup="myFunction()">
       
           </div>   
 
-
-          
-         
-
-         
-
-             
+           
            <div class="ui-field-contain"> <label for="othdis">其他折扣</label>
       
             <input type="number" pattern="[0-9]*" name="entry.2139213832" id="othdis" onkeyup="myFunction()">
@@ -208,25 +225,25 @@
       
           </div>
 
-          <div class="ui-field-contain"> <label for="seafood">鴻昌(蛤蜊'鮭魚)</label>
+          <div class="ui-field-contain"> <label for="seafood">海鮮(蛤蜊'鮭魚)</label>
       
             <input type="number" pattern="[0-9]*" name="entry.2032674941" id="seafood" onkeyup="myFunction()">
        
            </div>
 
-           <div class="ui-field-contain"> <label for="ming">貫辰(雞胸)</label>
+           <div class="ui-field-contain"> <label for="ming">朝敏</label>
       
             <input type="number" pattern="[0-9]*" name="entry.1017667788" id="ming" onkeyup="myFunction()">
        
            </div>
 
-           <div class="ui-field-contain"> <label for="sing">美食家</label>
+           <div class="ui-field-contain"> <label for="sing">欣宇</label>
       
             <input type="number" pattern="[0-9]*" name="entry.203413142" id="sing" onkeyup="myFunction()">
        
            </div>
 
-           <div class="ui-field-contain"> <label for="hao">元味堂</label>
+           <div class="ui-field-contain"> <label for="hao">皓廷</label>
       
             <input type="number" pattern="[0-9]*" name="entry.749418331" id="hao" onkeyup="myFunction()">
        
@@ -256,7 +273,7 @@
        
            </div>
 
-           <div class="ui-field-contain"> <label for="ponpi">鮮奶</label>
+           <div class="ui-field-contain"> <label for="ponpi">澎湃</label>
       
             <input type="number" pattern="[0-9]*" name="entry.139939772" id="ponpi" onkeyup="myFunction()">
        
@@ -274,7 +291,7 @@
        
            </div>
 
-           <div class="ui-field-contain"> <label for="icecream">昶翔</label>
+           <div class="ui-field-contain"> <label for="icecream">赫雅德</label>
       
             <input type="number" pattern="[0-9]*" name="entry.1567159060" id="icecream" onkeyup="myFunction()">
        
@@ -420,7 +437,13 @@
       
       {
       
-             
+        var p1 = parseInt(document.getElementById("dpanda").value);
+        var p2 = parseInt(document.getElementById("pandad").value);
+        if(isNaN(p1)) {p1=0};
+        if(isNaN(p2)) {p2=0};
+        var p = p1+p2;
+        document.getElementById("panda").value = p;
+        
         
         
         var c2000 = parseInt(document.getElementById("c2000").value);
@@ -566,8 +589,8 @@
         var ft = f1+f2+f3+f4+f5+f6+f7+f9+f10+f11+f12+f13+f14+f15+f16+f17+f18+f19+f20+f21+f22+f23+f24+f25+f26+f27+f28+f29+f30;//總支出
 
 
-        var ri = i1-f8;//實際營收
-        if(isNaN(ri)) {ri=0};  
+        var ri = i1+p2-f8;//實際營收
+
         document.getElementById("realin").value = ri;//實際營收  
       
           
@@ -635,4 +658,3 @@
       </body>
       
       </html>
-
